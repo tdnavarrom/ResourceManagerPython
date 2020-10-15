@@ -1,5 +1,10 @@
 import psutil
 
+def get_memory():
+    available_memory = psutil.virtual_memory()
+    return available_memory
+
+
 def get_disk_usage(disk_partition):
     disk_usage = psutil.disk_usage(disk_partition)
     return disk_usage
