@@ -65,7 +65,7 @@ def processes():
     r_processes = ps.get_current_processes()
     
     for x in r_processes:
-        click.echo("pid: %s name: %s memory: %s cpu: %s" % (x, r_processes[x]['name'],r_processes[x]['memory_percent'],r_processes[x]['cpu_num']) )
+        click.echo("pid: %s name: %s memory: %s cpu: %s" % (x, r_processes[x]['name'],r_processes[x]['memory_percent'],r_processes[x]['cpu_percent']) )
 
 
 @cli.command()

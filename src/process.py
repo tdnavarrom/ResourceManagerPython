@@ -13,7 +13,7 @@ def get_disk_paritions():
     return psutil.disk_partitions()
 
 def get_current_processes():
-    procs = {p.pid: p.info for p in psutil.process_iter(['name', 'memory_percent', 'cpu_num'])}
+    procs = {p.pid: p.info for p in psutil.process_iter(['name', 'memory_percent', 'cpu_percent'])}
     return procs
 
 def kill_process(pid):
